@@ -79,5 +79,5 @@ if __name__ == '__main__':
                         y_top = y
                         break
                 box = (x_left, y_top, x_right, y_top + h)
-            crop = img.crop(box)
+            crop = img.crop(box)  # box 参数为四元组，分别为左上角和右下角的横纵坐标
             crop.save('./result/{}'.format(filename))
